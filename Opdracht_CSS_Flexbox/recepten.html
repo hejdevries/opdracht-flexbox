@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Recepten </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<header>
+    <h1>Wil je je recept delen? Vul dan hier je gegevens in en upload het recept.</h1>
+</header>
+
+<body>
+    <form name="recepten" method="POST" data-netlify="true">
+        <p>
+            <label>Naam: <input type="text" name="naam" /></label>
+        </p>
+        <p>
+            <label>E-mail: <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Telefoon: <input type="tel" name="telnr" /></label>
+        </p>
+        <p>
+            <label>Leeftijd: <input type="number" name="leeftijd" /></label>
+        </p>
+        <p>
+            <label>Geboortedatum: <input type="date" name="geboortedatum" /></label>
+        </p>
+        <p>Gender:</p>
+        <p>
+            <input type="radio" id="man" name="gender" value="man" />
+            <label for="man">man</label><br>
+            <input type="radio" id="vrouw" name="gender" value="vrouw" />
+            <label for="vrouw">vrouw</label>
+        </p>
+        <p>Favoriete keuken:</p>
+        <p>
+            <input type="checkbox" id="frans" name="keuken" />
+            <label for="frans">frans</label><br>
+            <input type="checkbox" id="italiaans" name="keuken" />
+            <label for="italiaans">italiaans</label><br>
+            <input type="checkbox" id="spaans" name="keuken" />
+            <label for="spaans">spaans</label><br>
+            <input type="checkbox" id="arabisch" name="keuken" />
+            <label for="arabisch">arabisch</label>
+        </p>
+        <p>
+            <label>Favoriete kleur schort: <input type="color" name="kleur" /> </label>
+        </p>
+        <p>Biografie:</p>
+        <p>
+            <textarea name="bericht" rows="10" cols="30"></textarea>
+        </p>
+        <p>
+            <label>Upload je laatste recept: <input type="file" id="myfile" name="myfile" /></label>
+        </p>
+        <p>
+            <label>De URL van je recepten-website: <input type="url" name="url" /> </label>
+        </p>
+        <p>
+            <button type="reset">Wis formulier</button>
+        </p>
+        <p>
+            <button type="submit">Verzend formulier</button>
+        </p>
+
+
+    </form>
+
+
+</body>
+<nav>
+    <ul class="navbar">
+        <li class="navbar"><a class="navbar" href="index.html">Homepage</a></li>
+        <li class="navbar"><a class="navbar" href="about.html">Over Bart</a></li>
+        <li class="navbar"><a class="navbar" href="http://biodiversiteitgoirle.nl/">Biodiversiteit Goirle</a></li>
+        <li class="navbar"><a class="navbar"
+                href="https://www.wincacademy.nl/opleidingen/web-development-voor-beginners">Winc
+                Academy Web
+                Development</a></li>
+        <li class="navbar"><a class="navbar" href="contact.html">Contact</a></li>
+        <li class="navbar"><a class="navbar" href="blog.html">Bart's Blog</a></li>
+    </ul>
+</nav>
+
+</html>

@@ -1,0 +1,131 @@
+body { 
+    color: rgb(13, 66, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    line-height: 1.5em;
+}
+header {
+    border: 2px solid rgba(114, 43, 3, 0.925);
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+section {
+    border: 2px solid rgba(114, 43, 3, 0.925);
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+h1 {
+    border-bottom: 3px solid rgb(105, 167, 105);
+}
+#green-background {
+    background-color: rgb(105, 167, 105);
+}
+#light-green-background {
+    background-color: rgb(175, 241, 158);
+}
+img {
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+}
+nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 66, 8);
+}
+li.navbar {
+    display: inline;
+}
+li a.navbar{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    border-right: 1px solid #bbb;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.blogpost{
+    width: 300px;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px;
+}
+.blogpostFlexAlign{
+    width: 300px;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px;
+    flex-grow: 2;
+    align-self: flex-end;
+
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 1024px) {
+    body {
+        color: #fff;
+        background-color: #96df9c;
+        font-size: 12px;
+        line-height: 1.7em ;
+    }
+}        
+@media (max-width: 320px ) {
+    section {
+        font-size: 12px;
+        line-height: 1.2em;
+    }
+    p {
+        font-size: small;
+        line-height: 1.2em;
+    }
+    h1 {
+        font-size: 16px;
+        line-height: normal;
+    }
+    h2 {
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+    li a.navbar {
+        display: block;
+    }
+    header {
+        text-align: center;
+    }
+    nav {
+        font-size: small;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        font-size: xx-small;
+    }
+}
